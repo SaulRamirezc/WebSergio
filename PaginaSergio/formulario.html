@@ -1,0 +1,106 @@
+<div class="container-fluid mt-5">
+	<div class="row mt-2 justify-content-md-center">
+		<div class="col">
+			<h1 class="text-center">Contactanos</h1>
+		</div>
+	</div>
+	<div class="row mt-2"> 
+		<div class="col">
+		<div class="card mb-3 bg-light">
+			<div class="card-body">
+
+				<form action="correo.php" method="POST">
+
+								<form class="needs-validation" novalidate>
+									<div class="row">													  
+									  <div class="col mb-3">
+										<label for="validationCustom01">Nombre y Apellidos</label>
+										<input type="text" name="nombre" class="form-control" id="validationCustom01" placeholder="Nombre y Apellidos" required>
+										<div class="valid-feedback">
+										  Verificado!
+										</div>
+										<div class="invalid-feedback">
+										  Por favor introduzca su nombre completo
+										</div>
+									  </div>
+								  
+									  <div class="col mb-3">
+										<label for="validationCustom02">Correo Electronico</label>
+										<input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" class="form-control" id="validationCustom02" placeholder="ejemplo@hotmail.com" title="ejemplo@hotmail.com" required>
+										<div class="valid-feedback">
+										  Verificado!
+										</div>
+										<div class="invalid-feedback">
+										  Por favor introduzca un correo electronico valido.
+										</div>
+									  </div>
+										</div>
+										<div class="row">
+									  <div class="col mb-3">
+										<label for="validationCustom02">Asunto</label>
+										<input type="text" name="asunto" class="form-control" id="validationCustom02" placeholder="Asunto" title="Asunto" required>
+										<div class="valid-feedback">
+										  Verificado!
+										</div>
+										<div class="invalid-feedback">
+										  Por favor introduzca el municipio o estado de donde nos visita.
+										</div>
+									  </div>	
+									   <div class="col mb-3">
+										<label for="validationCustom02">Telefono</label>
+										<input type="text" name="telefono" class="form-control" id="validationCustom02" placeholder="(777) 123-4567" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="Un número de teléfono válido consta de una lada de 3 dígitos entre paréntesis, un espacio, los tres primeros dígitos del número, un espacio o guión (-) y cuatro dígitos, ejemplo: (777) 123-4567"   required>
+										<div class="valid-feedback">
+										  Verificado!
+										</div>
+										<div class="invalid-feedback">
+										  Por favor introduzca un telefono correcto.
+										</div>
+									  </div>
+										</div>
+										<div class="row">
+									  <div class="col mb-3">
+										<label for="validationCustom02">Comentarios & Preguntas</label>
+										<textarea name="mensaje" class="form-control" id="validationCustom02"  placeholder="Comentarios & Preguntas" aria-required="true" aria-invalid="false" rows="10" cols="100" required></textarea>
+										<div class="valid-feedback">
+										  Verificado!
+										</div>
+										<div class="invalid-feedback">
+										  Por favor introduzca su comentario.
+										</div>
+									  </div>
+										</div>
+										<div class="invalid-feedback">
+										  Vericar que tus datos sean correctos antes de enviar
+										</div>
+										<button class="btn btn-primary" type="submit">Enviar comentarios</button>
+									
+									
+								  </form>
+								</form>
+			</div>
+								  
+								  <script>
+								  // Example starter JavaScript for disabling form submissions if there are invalid fields
+								  (function() {
+									'use strict';
+									window.addEventListener('load', function() {
+									  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+									  var forms = document.getElementsByClassName('needs-validation');
+									  // Loop over them and prevent submission
+									  var validation = Array.prototype.filter.call(forms, function(form) {
+										form.addEventListener('submit', function(event) {
+										  if (form.checkValidity() === false) {
+											event.preventDefault();
+											event.stopPropagation();
+										  }
+										  form.classList.add('was-validated');
+										}, false);
+									  });
+									}, false);
+								  })();
+								  </script>
+							</div>
+						</div>
+					</div>	
+		</div> 	
+	</div>		

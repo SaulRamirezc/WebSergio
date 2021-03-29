@@ -1,0 +1,103 @@
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../imagenes/fondo4.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+
+.header:before{
+	content: '';
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	padding-left: 0;
+
+
+}
+
+.bg-white{
+	
+	z-index: 20;
+	width: 100%;
+
+}
+@media (min-width: 768px){
+	.bg-white{
+		background-color: transparent!important;
+		background-color: #c10000a2;
+		
+	}
+}
+
+
+
+.navg a{
+	color: #000000!important; 
+	font-family: 'Zilla Slab', serif;
+	font-size: 23px;
+	padding: 10px 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.navg a:hover{
+
+	background-color: #D73D25!important ;
+	color: #FFFFFF; 
+}
+
+.text-index{
+
+	margin-top: 100px;
+	font-family: 'Zilla Slab', serif;
+	
+
+}
+.text-index h2{
+	font-family: 'Anton';
+	font-size: 2em;
+	
+}
+
+
+.text-index span{
+	letter-spacing: 2px;
+	font-size: 2em;
+	font-family: 'Anton';
+	margin: 0 0 0 5px;
+	
+}
+
+.text-index p{
+font-size: 1.25em;
+
+
+
+}
+
+.img{
+
+	height: 70vh;
+	width: 50vh;
+}
+
+.card-title{
+
+	font-size: 3em;
+}
+
+.card1{
+
+	text-align: center;
+	margin-left: 5%;
+}
+
+.card-text{
+	font-size: 1.5em;
+
+}
